@@ -1,5 +1,5 @@
 #  
-# Template Dtd 08-25-21 
+# Template Dtd 08-26-21 
 # 
 # See http://help.github.com/ignore-files/ for more about ignoring files
 #
@@ -358,10 +358,10 @@ ASALocalRun/
 #
 # MSBuild Binary and Structured Log
 *.binlog
-
+#
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
-
+#
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 #

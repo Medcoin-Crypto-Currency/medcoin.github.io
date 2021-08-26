@@ -1,6 +1,6 @@
 # Site settings
 # 
-# underscore Config dot yaml (_config.yml) template ver 08-25-21
+# underscore Config dot yaml (_config.yml) template ver 08-26-21
 # 
 # Un-comment the theme for the `docs` folder [only] in satellite repos
 # theme: "jekyll-theme-cayman"
@@ -17,9 +17,9 @@
 name: ""
 lang: "en-US"
 encoding: UTF-8
-title: "Code Base | Medcoin™"
+title: "Code Base | Medcoin"
 tagline: "A GitHub main repo for the Medcoin™ Crypto Currency Project"
-description: "The Medcoin Crypto Currency Project is based at the `Universa-blockchain`."
+description: "The Medcoin™ Crypto Currency Project is currently based at the `Universa-blockchain`."
 twitter:
     username: "medcoin"
 author:
@@ -32,7 +32,8 @@ author:
 timezone: "America/Chicago"
 #
 # Exclude the default `README.md` file when rendering Jekyll
-exclude: ['README.md']
+exclude:
+  ['README.md']
 #
 # The 'baseurl' is the subpath of your designated project, e.g. /Blank-Lessons-Project or /blog or simply "/"
 baseurl: "/"
@@ -87,7 +88,7 @@ kramdown:
     input: "GFM"
     syntax_highlighter: rouge
     math_engine: "mathjax"
-    hard_wrap: "false"
+    hard_wrap: false
 #
 # Set the code for `Goodle Analytics`
 # Warning. Property `google_analytics` is not allowed
@@ -99,50 +100,40 @@ defaults:
       path: "assets/img"
     values:
       image: "true"
-defaults:
   - scope:
       path: "assets/img/png"
     values:
       image: "true"
-defaults:
   - scope:
       path: "assets/img/svg"
     values:
       image: "true"
-defaults:
   - scope:
       path: "assets/img/ico"
     values:
       image: "true"
-defaults:
   - scope:
       path: "" 
       type: "pages"
     values:
       layout: "default"
       author: "Robert Weber, Director"
-defaults:
   - scope:
       path: "pages"
       type: "pages"
     values:
       ayout: "default" 
-      author: "Robert Weber, Director" 
-excerpt_separator: <!-- this is a literal excerpt separator -->
-collections:
-  gists:
-    output: "true"
-defaults:
+      author: "Robert Weber, Director"
   - scope:
       path: "_gists"
       type: "pages"
     values:
       category: "medcoin"
+excerpt_separator: <!-- this is a literal excerpt separator -->
+collections:
+  gists:
+    output: "true"
 plugins_dir:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Gemfile.old
+  jekyll-feed
+  jekyll-seo-tag
+  jekyll-sitemap
