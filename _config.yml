@@ -55,8 +55,13 @@ baseurl: "/"
 # C=> "https://www.github.com/exvivospace/exvivospace.github.io"
 #
 # C=> "https://www.github.com/Medcoin-Crypto-Currency/medcoin.github.io"
+# 
+# Returns;
 #
-url: "https://medcoin.github.io"
+# C=> "https://medcoin-crypto-currency.github.io/medcoin.github.io/"
+#
+# url: "https://medcoin.github.io"
+url: "https://medcoin-crypto-currency.github.io/medcoin.github.io/"
 #
 # The `source` tells the Jekyll engine where to locate the opening `index` file.
 # In this case, the `source` of the `index.htm` is the `root` folder of the repo.
