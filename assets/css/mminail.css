@@ -1,0 +1,1091 @@
+/* The main .css file for the mminail.github.io Git repo Dtd 02-03-18 */
+
+/* -------------------------------------
+    Do NOT Import the Jekyll theme here
+------------------------------------- */
+/* @import 'jekyll-theme-cayman'; */
+
+/* -------------------------------------
+    Import the Rouge theme here
+------------------------------------- */
+@import 'rainbow-rouge.css';
+
+/* -------------------------------------
+    Set the font-face(s) for the Website
+------------------------------------- */
+
+/*  Note. C=> https://www.google.com/fonts for the entire 'eurostyle' group */
+@font-face {
+    font-family: 'eurostyle';
+    /* src: url(‘../fonts/euro/eurostyle.eot’); */
+    /* src: url('../fonts/euro/eurostyle.eot?#iefix') format(‘embedded-opentype’), */
+    src: url('/assets/fonts/euro/eurostyle.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url('../fonts/awesome/fontawesome-webfont.eot');
+    src: url('../fonts/awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
+        url('../fonts/awesome/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/awesome/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/awesome/fontawesome-webfont.svg') format('svg'),
+        url('../fonts/awesome/fontawesome.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-brands-regular-400.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-free-regular-400.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-free-solid-900.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glyphicon-halflings-regular';
+    src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot');
+    src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.woff2') format('woff2'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.woff') format('woff'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../assets/fonts/glyph/glyphicons-halflings-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  Note. C=> https://www.google.com/fonts for the entire 'trattatello' group  */
+@font-face {
+    font-family: 'trattatello';
+    /* src: url(‘../fonts/serif/trattatello.eot’); */
+    /* src: url('../fonts/serif/trattatello.eot?#iefix') format(‘embedded-opentype’), */
+    src: url('../assets/fonts/serif/trattatello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------------------------------
+    Begin Styled Font Classes
+---------------------------------- */
+
+.euro {
+    font-family: 'eurostyle';
+}
+
+.text-euro {
+    font-family: 'eurostyle';
+}
+
+.glyph {
+    font-family: 'glyphicon-halflings-regular';
+}
+
+.text-glyph {
+    font-family: 'glyphicon-halflings-regular';
+}
+
+.font-awesome {
+    font-family: 'fontawesome';
+}
+
+.text-trat {
+    font-family: 'trattatello';
+}
+
+/* -------------------------------
+    Begin Immediate Tag Classes
+---------------------------------- */
+
+/* Set the double-xx font size for the Immediate tag */
+i.largo {
+    font-size: xx-large;
+}
+
+/* -------------------------------
+    Begin Page Structure Classes
+---------------------------------- */
+
+/* Set the default html element */
+html {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 0px);
+    height: 100%;
+}
+
+/* Set the default body element */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font: normal 100%/1.4 Georgia, serif; */
+    background-color: rgb(155,155,204);
+    /* opacity: 0.5; /* ¡Cuidado! Both the Background-color AND the Text color are affected by the opacity level! */
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    width: calc(100% - 0px);
+    height: 100%;
+    /* overflow: auto; */
+}
+
+/* -------------------------------
+    Begin Styled Anchor Links
+---------------------------------- */
+a {
+    text-decoration: none;
+}
+
+a[href^="https:"] {
+    font-family: 'eurostyle';
+    font-size: 1.25em;
+    color: dodgerblue;
+    /* color: darkturquoise; */
+    /* color: #004B23; /* Forest Green */
+    letter-spacing: 1px;
+}
+
+a[href^="http:"] {
+    color: rgb(207,103,75); /* Indian Red */ 
+}
+
+/* ---------------------------------------------------
+    Set the rule for a custom <hr /> 'hard return' tag
+------------------------------------------------------ */
+.green-groove {
+  border: 1px groove green;
+}
+
+/* ------------------------------------
+    Begin Styled Header Ids and Classes
+------------------------------------ */
+
+/* Set the default header element */
+header {
+    color: #000531;
+    /* max-height: 581px; */
+    width: calc(100% - 0px);
+    padding-top: .25em;
+    background-color: #FFF8DC; /* cornsilk; */
+    
+}
+
+/* Set the background color and image for the header masthead */
+header#masthead {
+    background: hsl(220, 80%, 90%) url("") no-repeat; /* center center */
+    
+    /* background-color: rgb(155,155,204); /* Lavender */
+    /* background-color: #0099cc; /* Dodger Blue */
+    /* background-color: rgb(175,216,205); /* Luster Sky Blue */
+    /* background-color: hsl(220, 80%, 90%); /* Light Sky Blue */
+
+    /* background-color: #eebb55; /* orange-yellow */
+    /* background-color:rgb(255,255,229); /* moonlight */
+    /* background-color: cornsilk; */
+    /* background-color: lightyellow; */
+    /* background-color: palegoldenrod; */
+    /* background-color: lightgoldenrodyellow; */
+
+    /* background-color: peru; */
+    /* background-color: palevioletred; */
+
+    /* background-size: cover; */
+    background-size: contain;
+}
+
+/* Set the default hgroup element */
+hgroup {
+    position: relative;
+    /* position: absolute; */
+    text-align: center;
+    /* padding: 1%; */
+    width: calc(100% - 0px);
+    /* height: 100%; */
+    /* background-color: palevioletred; */
+}
+
+hgroup#primary-image {
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    /* margin: 1% 0% 0% 0%; */
+    left: auto;
+    right: auto;
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    /* float: right; */
+    z-index: 8;
+    /* bottom: 1%; */
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* -------------------------------
+    Begin Styled Titles
+---------------------------------- */
+
+/* Primary Title */
+
+h1 {
+    text-align: left;
+    /* min-width: 480px; */
+    width: calc(100% - 20px);
+    /* font-size: large; */
+    /* font-size: x-large; */
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+/* Subtitles */
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    /* font-size: medium; is standard type size*/
+    font-size: medium;
+}
+
+h7 {
+    font-size: x-small;
+}
+
+h8 {
+    font-size: xx-small;
+}
+
+/* -----------------------------------
+    Begin Styled Aside Ids and Classes
+----------------------------------- */
+
+/* Set the default aside element */
+aside {
+
+    position: relative;
+    /* position: absolute; */
+    text-align: left;
+    width: calc(100% - 0px);
+    height: 100%;
+    padding: 1%;
+    /* top: 0; */
+    background-color: #DCF9BE; /* Light Chartreuse */
+
+}
+
+/* Set the navigator aside */
+aside#navigator {
+
+    display: block;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    margin: 1% 0% 0% 0%;
+    /* right: 0; */
+    /* right: 0.10em; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
+    background-color:rgb(255,255,229); /* moonlight */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+
+}
+
+/* Nav semantic container classes */
+
+.disc {
+  list-style-type: disc;
+}
+
+.lead {
+    margin-left: 3%;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 100%;
+}
+
+.menu li {
+    max-width: 100%;
+    padding-top: .25em;
+    /* padding: 1%; */
+    margin-bottom: 1%;
+    /* display: inline-block; */
+    /* max-width: 50%; /* limit width */
+    background-color : rgb(155,155,204); /* Medium Purple */
+    /* text-align: left; */
+    color: dodgerblue;
+    /* color: #fff; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: rgb(242, 248, 248); /* ice blue */
+    /* text-align: left; */
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+/* Set the background color for the currently selected Nav tab */
+.currentlySelected {
+    background-color: #000531;
+    color: #fff;
+}
+
+/* Set the 'primary header' for the Website */
+
+aside#primary-header {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+    
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+    
+    z-index: 8;
+    background-color:rgb(255,255,229); /* moonlight */
+    /* background-color: palevioletred; */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* Set the 'secondary header' for the Website */
+
+aside#secondary-header {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+    
+    z-index: 8;
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+aside#dot-epub {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    margin: 1% 0% 0% 0%;
+    
+    z-index: 8;
+    
+    background-color: peru;
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* -------------------------------------
+    Begin Styled Article Ids and Classes
+------------------------------------- */
+
+/* Set the default Article tag */
+article {
+    position: relative;
+    text-align: left;
+    width: calc(100% - 0px);
+    /* opacity: 50%; */
+    /* background-color: rgb(175,216,205); /* Luster Sky Blue */
+}
+
+/* Set the 'main article' article */
+article#main-article {
+    display: block;
+    font-size: medium;
+    font-weight: 500;
+    padding: 1%;
+    margin: 1% 0% 0% 0%;
+    left: auto;
+    right: auto;
+    /* right: 0; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
+    /* background-color:rgb(255,255,229); /* moonlight */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+article#supporting-content {
+    display: block;
+    font-size: medium;
+    font-weight: 500;
+    padding: 1%;
+    margin: 1% 0% 0% 0%;
+    left: auto;
+    right: auto;
+    /* right: 0; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
+    /* background-color: papayawhip; /* papaya whip */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* ------------------------------------
+    Begin Styled Footer Ids and Classes
+------------------------------------ */
+
+/* Footer Templates */
+
+/* Set the alt-footer template for each page */
+
+footer#alt-footer {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+
+    z-index: 8;
+    background-color:rgb(255,255,229); /* moonlight */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* Set the page-footer template for each page */
+
+footer#page-footer {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+
+    z-index: 8;
+    background-color: #E2DCCA; /* Light Wheat */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* -------------------------------
+    Begin Container Ids and Classes
+---------------------------------- */
+
+div.container {
+    background-color: #fff; /* White */
+}
+
+div.container-fluid {
+    /* background-color: #D1E0F8; /* light powderblue */
+    /* background-color: skyblue; */
+    /* background-color: powderblue; */
+    /* padding-right: 1%; */
+    /* padding-left: 1%; */
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* --------------------------------
+    Begin Pre Block Ids and Classes
+-------------------------------- */
+
+/* Wordwrap and highlight the lines of code  */
+pre {
+    /* height: 100%; */
+    display: block;
+    /* display: inline; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: monospace; */
+    font-size: small;
+    margin: 1em 0;
+    /* Is the text-wrap selector now deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
+    white-space: pre-wrap;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
+    background-color: rgb(255,255,229); /* light yellow */
+    /* background: hsl(30,80%,90%); /* full moon yellow */
+}
+
+pre.flex-box {
+    display: flex;
+    /* flex-direction: row;
+    - where the default option is 'row' */
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+    /* -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; */
+
+    /* -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+	        flex-flow: row; */
+
+    /* margin-right: -0.625rem;
+    margin-bottom: 0.75rem;
+    margin-left: -0.625rem; */
+}
+
+code {
+    /* height: 100%; */
+    /* text-justify: auto */
+    /* text-justify: initial */
+    /* text-justify: inter-word; */
+    /* text-justify: inter-cluster; */
+    /* text-justify: inter-ideograph; */
+    /* text-justify: distribute */
+    /* text-justify: kashida; */
+    /* text-justify: trim */
+    text-align: left;
+    /* Is the text-wrap selector deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
+    white-space: nowrap;
+    /* white-space: normal; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    /* white-space: pre-wrap; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
+    /* background-color: hsl(220, 80%, 90%); /* sky blue */
+    background-color: whitesmoke;
+    border-radius: 1em;
+    padding: .25em;
+    border-color: hsl(216, 69%, 67%); /* dark sky blue */
+    /* border-color: hsl(220, 80%, 90%); /* light sky blue */
+    border-style: solid;
+    border-width: .25em;
+}
+
+article #supporting-content code {
+    border-color: hsl(220, 80%, 90%); /* sky blue */
+}
+
+pre code {
+    border: none;
+}
+
+/* -------------------------------------
+    Set the collapsible Responsive Image
+------------------------------------- */
+
+img {
+    /* min-width: 340px; */
+    /* max-width: 100%; */
+    height: auto;
+    border: 1px solid transparent;
+    /* border: 1px solid red; */
+}
+
+.img-responsive {
+    width: calc(100% - 0px);
+    /* max-width: 300px; */
+    
+}
+
+.img-photo {
+    width: calc(66% - 0px);
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+ 
+.img-logo-badge {
+    width: calc(25% - 0px);
+}
+
+ul.none {
+    list-style-type: none;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/* -----------------------------------------
+    Begin Image Zoom-out From Standard thumb
+----------------------------------------- */
+.icon-thumb {
+    width: 25px;
+    height: auto;
+}
+
+/* The Adjacent Sibling */
+.icon-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 5;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.icon-thumb:hover + .icon-zoom {
+    width: 100px;
+}
+
+/* ------------------------------------------
+    Begin Image Zoom-out From Alternative svg
+------------------------------------------ */
+
+.img-logo-badge-icon {
+    width: calc(5% - 0px);
+    height: auto;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.img-logo-badge-icon:hover + .icon-zoom {
+    width: calc(10% - 0px);
+}
+
+/* --------------------------------
+    Begin Styled Text Classes
+----------------------------------- */
+
+/* Set the shadow box class */
+
+.shadow-box {
+    color: darkcyan;
+    width: 20%;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 5px #0f0f0f;
+}
+
+/* Set the canvas text class */
+
+.canvas-text {
+    position: relative;
+    /* font-size: x-large; */
+    /* color: darkblue; */
+    /* text-align: center; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 5px red groove;
+    
+}
+
+/* Directional Text Classes */
+
+.text-left {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+/* Decorative Text Classes */
+
+.small-caps {
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+/* Emphasis Text Classes */
+
+.oblique-text {
+    font-family: 'eurostyle';
+    /* font-style: oblique; */
+    font-size: 1.25em;
+    color: #CC6600; /* Ashley Gold */
+    /* border: 2px black groove; */
+    letter-spacing: 1px;
+    /* letter-spacing: normal; /* zero length */
+}
+
+.script-text {
+    font-style: italic;
+    font-family: cursive;
+}
+
+/* -------------------------------
+    Begin Other Classes
+---------------------------------- */
+
+/* Set the basic classes */
+.panel-padding {
+    padding: 1%;
+}
+
+.more-link {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+mark,
+.mark {
+  /* padding: .2em; */
+  background-color: lime;
+}
+
+/* Set an alternative to default button 'medium' */
+.btn-med,
+.btn-group-med > .btn {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.3333333;
+    color: rgb(51,122,183); /* dark blue */
+    background-color: rgb(155,155,204); /* Medium Purple */
+    /* padding: 10px 16px; */
+    padding: 1%;
+    /* border-radius: 6px; */
+    border-radius: 4px;
+}
+
+.btn-fa:hover {
+  background-color: rgb(74, 173, 84); /* Medium Green */
+}
+
+/* Set the Spanish language color and style for Spanish words */
+.lang-es {
+    font-style: italic;
+    color: #004B23; /* Forest Green */
+    background-color: whitesmoke;
+    border-color: #CC3333; /* Tulip Red */
+    border-style: dashed;
+    border-width: .25em;
+    border-radius: 1em;
+    padding: .25em;
+}
+
+/* -------------------------------
+    End Other Classes
+---------------------------------- */
+
+/* BEGIN MEDIA QUERIES BY LARGEST MEDIA SECTION */
+
+@media only screen and (max-width: 2200px) and (min-width: 1201px)  {
+    header#masthead {
+        width: calc(100% - 0px);
+        height: 100%;
+        background-color: linen;
+    }
+
+    aside#navigator {
+        width: calc(100% - 0px);
+        height: 100%;
+        background-color: lightgoldenrodyellow;
+    }
+
+    footer#page-footer {
+        width: calc(100% - 0px);
+        height: 100%;
+        background-color: rgb(255, 255, 229); /* moonlight */
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px)  {
+
+    h1 {
+        /* display: inline-block; */
+        /* overflow: hidden; */
+        text-align: center;
+        width: calc(100% - 0px);
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header#masthead {
+        width: calc(100% - 0px);
+    }
+
+    aside#navigator {
+        width: calc(100% - 0px);
+    }
+
+    /* article#main-article {
+        width: calc(80% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(20% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px)  {
+
+    h1 {
+        /* display: inline-block; */
+        /* overflow: hidden; */
+        font-size: x-large;
+        text-align: center;
+        width: calc(100% - 0px);
+        padding-right: 1%;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    header#masthead {
+        width: calc(100% - 0px);
+    }
+
+    aside#navigator {
+        width: calc(100% - 0px);
+    }
+
+    /* article#main-article {
+        width: calc(70% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(30% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 361px)   {
+
+    h1 {
+        width: calc(100% - 20px);
+        /* max-width: 70%; */
+        /* display: inline-block; */
+        /* overflow: hidden; */
+        text-align: center;
+        /* max-width: 180px; */
+        font-size: x-large;
+        /* margin-left: 250px; */
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    header#masthead {
+        width: calc(100% - 0px);
+    }
+
+    aside#navigator {
+        width: calc(100% - 0px);
+    }
+
+    /* article#main-article {
+        width: calc(70% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(30% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+    }
+
+    .btn-med, .btn-group-med > .btn {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    h1 {
+        font-size: large;
+        text-align: right;
+        width: calc(100% - 10px);
+    }
+
+    h2 {
+        font-size: large;
+        text-align: left;
+        width: calc(100% - 10px);
+    }
+
+    h3 {
+        font-size: medium;
+        text-align: left;
+        width: calc(100% - 0px);
+    }
+
+    header#masthead {
+        width: calc(100% - 0px);
+        min-height: 210px;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    aside#navigator {
+        text-align: center;
+        width: calc(100% - 0px);
+        background-color: #CCF89F; /* Mild Chartreuse */
+    }
+
+    article#main-article {
+        text-align: left;
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        /* background-color: #8DD7F6; /* Mild Sky Blue */
+    }
+
+    aside#supporting-content {
+        text-align: left;
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: papayawhip;
+    }
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: rgb(254,254,205); /* full-moon yellow */
+    }
+
+    footer#site-footer {
+        text-align: center;
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: honeydew;
+    }
+
+    .btn-med, .btn-group-med > .btn {
+        text-align: left;
+    }
+
+    .img-responsive {
+        width: calc(100% - 0px);
+    }
+}
+
+/* SMALLEST MEDIA QUERY END */
