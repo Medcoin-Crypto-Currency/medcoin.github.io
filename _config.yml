@@ -36,10 +36,6 @@ author:
 # Set the North American default time zone for the repo
 timezone: "America/Chicago"
 #
-# Exclude the default `README.md` file when rendering Jekyll
-exclude:
-  ['README.md']
-#
 # The 'baseurl' is the subpath of your designated project
 # 
 # C=> /Blank-Lessons-Project or /blog or simply "/" for `main repos`
@@ -60,8 +56,7 @@ baseurl: "/"
 #
 # C=> "https://medcoin-crypto-currency.github.io/medcoin.github.io/"
 #
-# url: "https://medcoin.github.io"
-url: "https://medcoin-crypto-currency.github.io/medcoin.github.io/"
+url: "https://medcoin.github.io"
 #
 # The `source` tells the Jekyll engine where to locate the opening `index` file.
 # In this case, the `source` of the `index.htm` is the `root` folder of the repo.
@@ -181,3 +176,8 @@ exclude:
   - Gemfile.lock
   - Gemfile.old
   #
+# Exclude the default `README.md` file when rendering Jekyll, as follows:
+# exclude:
+#   - ['README.md']
+#
+# No newline at end of file
