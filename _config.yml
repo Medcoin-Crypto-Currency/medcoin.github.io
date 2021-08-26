@@ -3,23 +3,28 @@
 # underscore Config dot yaml (_config.yml) template ver 08-26-21
 # 
 # Un-comment the theme for the `docs` folder [only] in satellite repos
+# Note. This is a `main repo`.
+#
 # theme: "jekyll-theme-cayman"
 # 
 # There is one main repository as of 11-11-19
 # repository: https://www.github.com/mminail/mminail.github.io
 #
-# There are approx seventy satellite repositories as of 11-11-19
+# There are approx Sixty satellite repositories as of 11-11-19
 # repository: https://www.github.com/rwebaz/rwebaz.github.io
 #
 # There is also one new repository as of 11-11-19
 # repository: https://www.github.com/exvivospace/exvivospace.github.io
 #
+# And, another main repository ...
+# repository: https://www.github.com/Medcoin-Crypto-Currency/medcoin.github.io
+# 
 name: ""
 lang: "en-US"
 encoding: UTF-8
 title: "Code Base | Medcoin"
 tagline: "A GitHub main repo for the Medcoin™ Crypto Currency Project"
-description: "The Medcoin™ Crypto Currency Project is currently based at the `Universa-blockchain`."
+description: "The Medcoin™ Crypto Currency Project is currently working on a interface to the `Universa-blockchain`."
 twitter:
     username: "medcoin"
 author:
@@ -27,7 +32,7 @@ author:
     email: "medcoin@live.com"
     github_username: "rwebaz"
     twitter_username: "medcoin"
-#
+# 
 # Set the North American default time zone for the repo
 timezone: "America/Chicago"
 #
@@ -35,16 +40,31 @@ timezone: "America/Chicago"
 exclude:
   ['README.md']
 #
-# The 'baseurl' is the subpath of your designated project, e.g. /Blank-Lessons-Project or /blog or simply "/"
+# The 'baseurl' is the subpath of your designated project
+# 
+# C=> /Blank-Lessons-Project or /blog or simply "/" for `main repos`
+#
 baseurl: "/"
 #
-# The `url` is the parental web address of your designated project, e.g. /https://rwebaz.github.io
+# The `url` is the parental web address of your designated project
+#
+# C=> "https://www.github.com/mminail/mminail.github.io"
+#
+# C=> "https://www.github.com/rwebaz/rwebaz.github.io"
+#
+# C=> "https://www.github.com/exvivospace/exvivospace.github.io"
+#
+# C=> "https://www.github.com/Medcoin-Crypto-Currency/medcoin.github.io"
+#
 url: "https://medcoin.github.io"
 #
 # The `source` tells the Jekyll engine where to locate the opening `index` file.
 # In this case, the `source` of the `index.htm` is the `root` folder of the repo.
-# Because this GitHub pages website is being served remotely from the `root` of the repo, the location of the `index` file is the `root`.
-# source: "mminail.github.io"
+# Because this GitHub pages website is being served remotely from the `root`
+# of the repo, the location of the `index` file is the `root`.
+#
+# source: "medcoin.github.io"
+# source: [your repo's top level directory]
 #
 # GitHub Pages Mandatory Defaults
 # 
@@ -68,27 +88,37 @@ safe: true
 # Note. When uncommenting a Yaml statement, remove the enveloping quotations
 # Warming. Property `gist` is not allowed
 gist:
-  noscript: "false"
+  noscript: "false"  
 #
 # GitHub pages default (C)
-# Disable the `Experimental Incremental Build Feature` or `EIBF`
-# suggested. incremental: "false"; disables the `EIBF` Why? [may break site generation in some cases]
+# Disable the `Experimental Incremental Build Feature` or `EIBF`suggested, as follows:
+# incremental: "false"; disables the `EIBF`
+# Why? [may break site generation in some cases]
 # Note. When uncommenting a Yaml statement, remove the enveloping quotations
 # Warning. Author not disabling this feature nor enabling this feature
-# incremental: false
-#
+incremental: false
+# 
+# GitHub pages default (D)
 # Set the default `highlighter` mechanism to `Rouge`
+# highlighter: rouge (with or without quotes)
 highlighter: "rouge"
-#
+# 
+# GitHub pages default (E)
+# Set the properties for `Kramdown`
 # Set the default `markdown` engine to `Kramdown`
 markdown: "kramdown"
-#
-# Set the properties for `Kramdown`
+# Note. If you want to use another highlighter ie.) highlight.js ...
+# You must then disable Jekyll's syntax highlighting by updating
+# your project's _config.yml file as follows:
+# kramdown:
+#   syntax_highlighter_opts:
+#     disable : false
 kramdown:
-    input: "GFM"
-    syntax_highlighter: rouge
-    math_engine: "mathjax"
-    hard_wrap: false
+  input: "GFM"
+  syntax_highlighter: "rouge"
+  math_engine: "mathjax"
+#
+hard_wrap: "false"
 #
 # Set the code for `Goodle Analytics`
 # Warning. Property `google_analytics` is not allowed
@@ -129,11 +159,20 @@ defaults:
       type: "pages"
     values:
       category: "medcoin"
+#
 excerpt_separator: <!-- this is a literal excerpt separator -->
+#
 collections:
   gists:
     output: "true"
+#
 plugins_dir:
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
+#
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.old
+  #
