@@ -1,0 +1,54 @@
+<h4>Square Me Form</h4>
+<p>
+	<span>The Square Me form allows the end-user to enter a whole number.</span>
+</p>
+
+<p>
+	<span>There is a toggle at the right border of the input box that occludes the 'r' on the word number.</span>
+</p>
+
+<p>
+	<span>The toggle will allow the end-user to scroll through a list of whole numbers when deciding which numeral to square.</span>
+</p>
+
+<p>
+	<span>Once entered, the end-user clicks the checkbox to affirm his or her selection and then fires off an event by clicking the submit button.</span>
+</p>
+
+<p>
+	<span>The button is wired to a Math function that will square the numeral selected and return via an alert the result of the square.</span>
+</p>
+
+<p>
+	<span>Optionally, a separate 2nd button may fire off the square root of the selection, as well.</span>
+</p>
+	<hr class="green-groove" />
+
+<div class="control group">
+	<label class="control-label">Number Input</label>
+	<div class="controls">
+<form>
+	<fieldset>
+		<legend>Square Me</legend>
+
+			<label class="label-success">Square Me</label>
+			<input type="number" placeholder="Enter a whole number ..." autofocus tabindex="1" />
+
+			<span class="help-block">What numeral do you wish to square?</span>
+
+			<label for="slider-flp-m">Ready?</label>
+			<select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" autofocus tabindex="2">
+				<option value="off">No</option>
+				<option value="on" selected="">Yes</option>
+			</select>
+
+			<label class="checkbox"></label>
+			<input type="checkbox" autofocus tabindex="3" />
+			
+			<button type="submit" class="btn" onclick="">Submit</button>
+
+	</fieldset>
+</form>
+	</div>
+</div>
+	<hr class="green-groove" />

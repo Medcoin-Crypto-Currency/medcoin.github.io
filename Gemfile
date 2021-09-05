@@ -5,7 +5,8 @@
 #
 source "https://rubygems.org"
 #
-# Script by Parker C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
+# Script by Parker
+# C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
 # require 'json'
 # require 'open-uri'
 # versions = JSON.parse(open('https://pages.github.com/versions.json').read)
